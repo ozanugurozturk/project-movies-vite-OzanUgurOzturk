@@ -1,3 +1,10 @@
+import React from "react";
+import Routes from "./components/Routes";
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <div>
+      <Routes />
+    </div>
+  );
 };
