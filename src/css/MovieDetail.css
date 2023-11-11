@@ -1,0 +1,86 @@
+.movie-detail-container {
+  position: relative;
+}
+
+.back-link {
+  position: absolute;
+  display: inline-flex;
+  color: #fff;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  left: 20px;
+  top: 20px;
+}
+
+.background {
+  min-height: 100vh;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.movie-poster {
+  border: 5px solid #fff;
+  width: 200px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.details {
+  margin-left: 0;
+}
+
+@media (min-width: 577px) {
+  .summary {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 50px;
+  }
+
+  .details {
+    margin-left: 20px;
+  }
+
+  .movie-poster {
+    width: 250px;
+  }
+}
+
+@media (min-width: 770px) {
+  .movie-poster {
+    width: initial;
+  }
+}
+
+.details h1 {
+  text-shadow: 1px 1px rgb(77, 77, 77);
+}
+
+.details .title {
+  margin-right: 10px;
+}
+
+.details p {
+  max-width: 400px;
+}
+
+.rating {
+  color: black;
+  font-weight: 500;
+  background: white;
+  padding: 0 5px;
+  text-shadow: none;
+  display: inline-block;
+}
+
+.rating:before {
+  content: url("/star.svg");
+  padding-right: 5px;
+}

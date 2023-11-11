@@ -1,0 +1,59 @@
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container a {
+  width: 100%;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive design for different screen widths */
+@media (min-width: 370px) {
+  .movie-container a {
+    width: 50%;
+  }
+}
+
+@media (min-width: 570px) {
+  .movie-container a {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 820px) {
+  .movie-container a {
+    width: 25%;
+  }
+}
+
+/* Styles for the images inside the links */
+.movie-container a img {
+  width: 100%;
+}
+
+/* Styles for the details container */
+.movie-container .details {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  padding: 20px;
+}
+
+.movie-container a:hover .details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.movie-container .details h1 {
+  margin-top: auto;
+  margin-bottom: 0;
+}

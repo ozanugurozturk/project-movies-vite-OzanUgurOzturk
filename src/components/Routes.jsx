@@ -1,17 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes as ReactRoutes } from 'react-router-dom';
 import MovieList from "./MovieList";
 import MovieDetail from "./MovieDetail";
 
 const Routes = () => {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/" exact component={MovieList} />
-        <Route path="/movies/:id" component={MovieDetail} />
-      </Switch>
-    </Router>
-  );
+    return (
+        <Router>
+            <ReactRoutes>
+                <Route path="/" element={<MovieList />} />
+                <Route path="/movies/:id" element={<MovieDetail />} />
+            </ReactRoutes>
+        </Router>
+    );
 };
 
 export default Routes;
