@@ -34,8 +34,8 @@
   width: 100%;
 }
 
-/* Styles for the details container */
-.movie-container .details {
+/* Styles for the info container */
+.movie-container .info {
   position: absolute;
   top: 0;
   right: 0;
@@ -46,14 +46,14 @@
   padding: 20px;
 }
 
-.movie-container a:hover .details {
+.movie-container a:hover .info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.movie-container .details h1 {
+.movie-container .info h1 {
   margin-top: auto;
   margin-bottom: 0;
 }
