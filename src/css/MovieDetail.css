@@ -92,3 +92,23 @@
 .rating .star {
   color: gold;
 }
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.error-container p {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.error-container .back-link {
+  margin-top: 20px;
+  font-size: 1.4em;
+}
