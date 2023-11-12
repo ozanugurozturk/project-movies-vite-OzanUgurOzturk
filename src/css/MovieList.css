@@ -1,3 +1,18 @@
+.movie-list-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.list-select {
+  padding: 8px;
+  font-size: 16px;
+}
+
 .movie-container {
   display: flex;
   flex-wrap: wrap;
