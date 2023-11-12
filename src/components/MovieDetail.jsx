@@ -2,15 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "../css/MovieDetail.css";
 
-const MovieDetail = () => {
+const MovieDetail = ({ apiKey }) => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
-    // Fetching the movie details using the API and update state
-    // Using API key and the provided API endpoint
-    // https://api.themoviedb.org/3/movie/{movie_id}?api_key=YOUR_API_KEY&language=en-US
-    const apiKey = "c6c7c360f0f76c21a01ef7cbb4f227c7";
     const endpoint = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=en-US`;
 
     fetch(endpoint)

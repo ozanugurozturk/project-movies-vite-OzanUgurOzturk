@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route, Routes as ReactRoutes } from 'react-rou
 import MovieList from "./MovieList";
 import MovieDetail from "./MovieDetail";
 
-const Routes = () => {
+const Routes = ({ apiKey }) => {
     return (
         <Router>
             <ReactRoutes>
-                <Route path="/" element={<MovieList />} />
-                <Route path="/movies/:id" element={<MovieDetail />} />
+                <Route path="/" element={<MovieList apiKey={apiKey} />} />
+                <Route path="/movies/:id" element={<MovieDetail apiKey={apiKey} />} />
             </ReactRoutes>
         </Router>
     );

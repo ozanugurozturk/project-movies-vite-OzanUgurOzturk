@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/MovieList.css";
 
-const MovieList = () => {
+const MovieList = ({ apiKey }) => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        const apiKey = "c6c7c360f0f76c21a01ef7cbb4f227c7";
         const endpoint = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
 
         fetch(endpoint)
