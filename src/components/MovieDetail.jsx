@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { TiArrowBackOutline } from 'react-icons/ti';
+import { AiFillStar } from 'react-icons/ai';
 import "../css/MovieDetail.css";
 
 const MovieDetail = ({ apiKey }) => {
@@ -23,7 +25,9 @@ const MovieDetail = ({ apiKey }) => {
   return (
     <article className="movie-detail-container">
       <div className="back-link">
-        <Link to="/">Back to Movies</Link>
+      <Link to="/">
+        <TiArrowBackOutline  /> Back to Movies
+      </Link>
       </div>
       {movie && (
         <div
@@ -41,7 +45,7 @@ const MovieDetail = ({ apiKey }) => {
             <div className="details">
               <h1>
                 <span className="title">{movie.title}</span>{" "}
-                <span className="rating">{Math.round(movie.vote_average * 10) / 10}</span>
+                <span className="rating"><AiFillStar className="star" /> {Math.round(movie.vote_average * 10) / 10}</span>
               </h1>
               <p>{movie.overview}</p>
             </div>

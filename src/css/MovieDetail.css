@@ -4,13 +4,24 @@
 
 .back-link {
   position: absolute;
-  display: inline-flex;
-  color: #fff;
+  display: flex;
+  color: white;
   align-items: center;
   font-weight: bold;
   text-decoration: none;
   left: 20px;
   top: 20px;
+  font-size: 1.4em;
+}
+
+.back-link a {
+  color: white;
+  text-decoration: none;
+  filter: drop-shadow(3px 4px 5px rgb(0 0 0/.9));
+}
+
+.back-link svg {
+  margin-right: 5px; 
 }
 
 .background {
@@ -74,15 +85,10 @@
 }
 
 .rating {
-  color: black;
   font-weight: 500;
-  background: white;
-  padding: 0 5px;
-  text-shadow: none;
   display: inline-block;
 }
 
-.rating:before {
-  content:url("../../public/vite.svg");
-  padding-right: 5px;
+.rating .star {
+  color: gold;
 }
