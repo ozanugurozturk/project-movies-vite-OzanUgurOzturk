@@ -63,6 +63,7 @@ const MovieDetail = ({ apiKey }) => {
             alt={movie.title}
             className="movie-poster"
           />
+          <p className="placeholder-text">Photo is loading...</p>
           <div className="details">
             <h1>
               <span className="title">{movie.title}</span>{" "}
