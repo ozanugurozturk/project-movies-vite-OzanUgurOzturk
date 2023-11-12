@@ -6,9 +6,8 @@
 
 # Movie Site Project
 
-Replace this readme with your own information about your project.
+The Netlify link of the project: https://project-movies-vite-ozanugurozturk.netlify.app/
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## Getting Started with the Project
 
