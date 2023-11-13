@@ -141,3 +141,14 @@
   margin-top: 20px;
   font-size: 1.4em;
 }
+
+.linked-page {
+  color: white;
+  text-decoration: none;
+  font-size: inherit;
+  padding-left: 1em;
+}
+
+.linked-page:hover {
+  text-decoration: underline;
+}

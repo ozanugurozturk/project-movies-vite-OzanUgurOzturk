@@ -71,7 +71,22 @@ const MovieDetail = ({ apiKey }) => {
               </a>{" "}
               <span className="rating"><AiFillStar className="star" /> {Math.round(movie.vote_average * 10) / 10}</span>
             </h1>
+            {movie.belongs_to_collection && (
+              <Link className="linked-page" to={`/collections/${movie.belongs_to_collection.id}`}>
+                {movie.belongs_to_collection.name}
+              </Link>
+            )}
+            {movie.genres.map((genre) => (
+              <Link key={genre.id} className="linked-page" to={`/genres/${genre.id}`}>
+                {genre.name}
+              </Link>
+            ))}
             <p>{movie.overview}</p>
+            {movie.production_companies.map((company) => (
+              <Link key={company.id} className="linked-page" to={`/companies/${company.id}`}>
+                {company.name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
