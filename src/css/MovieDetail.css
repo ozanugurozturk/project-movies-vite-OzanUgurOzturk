@@ -59,6 +59,7 @@
 
 .details {
   margin-left: 0;
+  max-width: 60%;
 }
 
 @media (min-width: 577px) {
@@ -76,16 +77,23 @@
   .movie-poster {
     width: 250px;
   }
+  .details p {
+    font-size: calc(1.7vw + 2px);
+  }
 }
 
 @media (min-width: 770px) {
   .movie-poster {
     width: initial;
   }
+  .details p {
+    font-size: calc(2.1vw + 2px);
+  }
 }
 
 .details h1 {
   text-shadow: 1px 1px rgb(77, 77, 77);
+  font-size: 2em;
 }
 
 .details .title {
@@ -93,9 +101,10 @@
 }
 
 .details p {
-  max-width: 400px;
+  max-width: 100%;
   background: rgba(0, 0, 0, 0.25);
   padding: 25px;
+  font-size: calc(1.1vw + 4px);
 }
 
 .rating {
