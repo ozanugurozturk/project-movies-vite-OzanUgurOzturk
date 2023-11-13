@@ -12,6 +12,11 @@
   left: 20px;
   top: 20px;
   font-size: 1.4em;
+  z-index: 15;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }
 
 .back-link a {
@@ -140,4 +145,15 @@
 .error-container .back-link {
   margin-top: 20px;
   font-size: 1.4em;
+}
+
+.similar-movies a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.similar-movies a:hover {
+  color: white;
+  text-decoration: underline;
 }

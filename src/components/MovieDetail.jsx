@@ -72,6 +72,9 @@ const MovieDetail = ({ apiKey }) => {
               <span className="rating"><AiFillStar className="star" /> {Math.round(movie.vote_average * 10) / 10}</span>
             </h1>
             <p>{movie.overview}</p>
+            <div className="similar-movies">
+              <Link to={`/movies/${id}/similar`}>See Similar Movies</Link>
+            </div>
           </div>
         </div>
       </div>
