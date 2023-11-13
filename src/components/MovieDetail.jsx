@@ -66,7 +66,9 @@ const MovieDetail = ({ apiKey }) => {
           <p className="placeholder-text">Photo is loading...</p>
           <div className="details">
             <h1>
-              <span className="title">{movie.title}</span>{" "}
+              <a href={movie.homepage} target="_blank" rel="noopener noreferrer" className="title-link">
+                {movie.title}
+              </a>{" "}
               <span className="rating"><AiFillStar className="star" /> {Math.round(movie.vote_average * 10) / 10}</span>
             </h1>
             <p>{movie.overview}</p>
